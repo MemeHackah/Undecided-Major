@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/John Greaves/Documents/GitHub/team01-drexel-18/Game/Undecied Major/Assets/UndeciedMajor.unity
+  isLoaded: 1
+  isActive: 1
