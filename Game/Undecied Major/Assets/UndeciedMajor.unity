@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 26979342}
   m_Layer: 9
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,6 +149,7 @@ MonoBehaviour:
     m_Bits: 512
   target: {fileID: 71066372}
   speed: 3
+  maxHealth: 2
 --- !u!195 &26979338
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1835,3 +1836,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089b7d867ef8d6c49acd03818f3a1834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2128449657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2128449648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b46631ebf4342ab97f7458662f92fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 1
+  target: {fileID: 26979341}

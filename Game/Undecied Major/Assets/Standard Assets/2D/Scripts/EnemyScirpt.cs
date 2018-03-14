@@ -10,9 +10,12 @@ public class EnemyScirpt : MonoBehaviour
     Rigidbody2D myBody;
     Transform myTrans;
     float myWidth;
+	static float currentHealth;
+	public float maxHealth;
 
     private void Start()
     {
+		currentHealth = maxHealth;
         myTrans = this.transform;
         myBody = this.GetComponent<Rigidbody2D>();
         myWidth = this.GetComponent<SpriteRenderer>().bounds.extents.x;
@@ -30,4 +33,12 @@ public class EnemyScirpt : MonoBehaviour
             //Play animation here
         }
     }
+	public static void takeDamage(float damage)
+	{
+		currentHealth -= damage;
+		if (currentHealth <= 0) 
+		{
+			Destroy(GameObject.FindGameObjectWithTag("Enemy"));
+		}
+	}
 }
