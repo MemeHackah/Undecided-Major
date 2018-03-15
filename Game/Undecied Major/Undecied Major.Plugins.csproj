@@ -287,6 +287,7 @@
     <Compile Include="Assets\Standard Assets\2D\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\EnemyScirpt.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\GameOver.cs" />
+    <Compile Include="Assets\Standard Assets\2D\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\PlayerAttack.cs" />

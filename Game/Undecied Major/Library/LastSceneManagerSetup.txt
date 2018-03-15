@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/UndeciedMajor.unity
+- path: Assets/Win.unity
   isLoaded: 1
   isActive: 1

@@ -10,11 +10,12 @@ public class PlayerHealth : MonoBehaviour
     public const double MAX_GPA = 4.0;
     public double currentGpa;
     private Transform player;
+    string text;
 
     private void Start()
     {
         currentGpa = MAX_GPA;
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;  
     }
     public void takeDamage(double damage)
     {

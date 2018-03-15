@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyScirpt : MonoBehaviour
 {
     public Transform target;
     public float speed;
-    private Rigidbody2D myBody;
     private Transform myTrans;
 	static float currentHealth;
 	public float maxHealth;
@@ -17,7 +17,6 @@ public class EnemyScirpt : MonoBehaviour
     {
 		currentHealth = maxHealth;
         myTrans = this.transform;
-        myBody = this.GetComponent<Rigidbody2D>();
         playerHp = target.GetComponent<PlayerHealth>();
     }
     private void Update()
@@ -39,6 +38,7 @@ public class EnemyScirpt : MonoBehaviour
 		if (currentHealth <= 0) 
 		{
 			Destroy(GameObject.FindGameObjectWithTag("Enemy"));
-		}
+            SceneManager.LoadScene(2);
+        }
 	}
 }
