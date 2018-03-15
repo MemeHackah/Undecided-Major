@@ -15,6 +15,6 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     private void OnGUI()
     {
-        GUI.TextArea(new Rect(Screen.width / 2 - 400, Screen.height / 2 + 100, 100, 40), "GPA:" + playerHealth.currentGpa);
+        GUI.TextArea(new Rect(Screen.width / 2 - 600, Screen.height / 2 + 300, 250, 50), "GPA:" + playerHealth.currentGpa);
     }
 }
