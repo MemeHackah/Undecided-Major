@@ -1,36 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyScirpt : MonoBehaviour
 {
-    public LayerMask enemyMask;
     public Transform target;
     public float speed;
-    Rigidbody2D myBody;
-    Transform myTrans;
-    float myWidth;
+    private Transform myTrans;
 	static float currentHealth;
 	public float maxHealth;
+    private bool moving = false;
+    PlayerHealth playerHp;
 
     private void Start()
     {
 		currentHealth = maxHealth;
         myTrans = this.transform;
-        myBody = this.GetComponent<Rigidbody2D>();
-        myWidth = this.GetComponent<SpriteRenderer>().bounds.extents.x;
+        playerHp = target.GetComponent<PlayerHealth>();
     }
     private void Update()
     {
-        if (target.position.x >= 7.3)
+        if ((target.position.x >= 7.3 ) && (target.position.y <= 0.6) || moving)
         {
             float movementDistance = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target.position, movementDistance);
+            moving = true;
         }
         if (target.GetComponent<BoxCollider2D>().IsTouching(myTrans.GetComponent<BoxCollider2D>()))
         {
-            PlayerHealth.takeDamage(0.2);
-            //Play animation here
+            playerHp.takeDamage(0.2);
         }
     }
 	public static void takeDamage(float damage)
@@ -39,6 +38,7 @@ public class EnemyScirpt : MonoBehaviour
 		if (currentHealth <= 0) 
 		{
 			Destroy(GameObject.FindGameObjectWithTag("Enemy"));
-		}
+            SceneManager.LoadScene(2);
+        }
 	}
 }
