@@ -284,7 +284,6 @@
   <ItemGroup>
     <Compile Include="Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Standard Assets\2D\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\EnemyScirpt.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\GameOver.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\HealthBar.cs" />
@@ -293,6 +292,7 @@
     <Compile Include="Assets\Standard Assets\2D\Scripts\PlayerAttack.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\Restarter.cs" />
+    <Compile Include="Assets\Standard Assets\2D\Scripts\Win.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
