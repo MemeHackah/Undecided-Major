@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/UndeciedMajor.unity
+- path: C:/Users/alexn/Documents/GitHub/team01-drexel-18/CI-103/Game/Undecided Major/Assets/Tutorial.unity
   isLoaded: 1
   isActive: 1
